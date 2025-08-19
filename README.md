@@ -16,7 +16,7 @@ Incluye:
 * Stack Docker (MySQL 8 + Adminer) listo para levantar en un comando
 
 <p align="center">
-  <img src="docs/er_diagram.png" width="600" alt="ER diagram">
+  <img src="docs/er_diagram_Aydee.png" width="600" alt="ER diagram">
 </p>
 
 ## 2 · Levantar en local
