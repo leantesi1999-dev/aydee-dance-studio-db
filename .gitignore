@@ -1,0 +1,24 @@
+# ---------------------------------
+# MySQL & Docker project gitignore
+# ---------------------------------
+
+# Dumps y backups
+*.sql
+*.sql.gz
+*.dump
+
+# Configuración local
+my.cnf
+.env
+
+# Archivos temporales
+*~
+*.swp
+*.swo
+
+# Directorios de IDE / editor
+.vscode/
+.idea/
+
+# Copias de seguridad de Workbench
+*.bak
