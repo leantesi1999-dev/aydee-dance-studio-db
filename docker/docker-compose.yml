@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: aydee-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: aydee
+    ports:
+      - "3306:3306"
+    volumes:
+      # El script del esquema se cargará automáticamente al arrancar
+      - ./init:/docker-entrypoint-initdb.d
+
+  adminer:
+    image: adminer:latest
+    container_name: aydee-adminer
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
