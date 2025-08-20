@@ -266,7 +266,7 @@ VALUES
      60, 40000, 50000,'Adultos sin experiencia'),
   ('Danza Jazz intermedio',        'Intermedio',
      (SELECT sala_id FROM salas WHERE nombre_sala='mediana'),
-     60, 42000, 0,'Requiere base previa'),
+     90, 42000, 0,'Requiere base previa'),
   ('Clásico niños',                'Inicial',
      (SELECT sala_id FROM salas WHERE nombre_sala='chica'),
      60, 38000, 0,'Niñas/os 6-10 años'),
@@ -319,7 +319,7 @@ INSERT INTO clases_horarios (clase_id, profe_id, dia_semana,
                              hora_inicio, hora_fin, sala_id)
 SELECT  c.clase_id,
         p.profe_id,
-        'Jue','18:30:00','19:30:00',
+        'Jue','18:30:00','20:00:00',
         s.sala_id
 FROM clases c, profes p, salas s
 WHERE c.nombre_clase='Danza Jazz intermedio'
